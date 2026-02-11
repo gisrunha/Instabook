@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* grid area  */
+.grid-area {
+    display: grid;
+    grid-template-areas:
+        "navbar navbar"
+        "main sidebar";
+    grid-template-rows: 60px 1fr;
+    height: 100vh;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+}
+
+/* main section's flex */
+#main-header {
+    display: flex;
+    grid-area: navbar;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #E4EFE7;
+    color: #fff;
+    text-align: center;
+}
+
+.logo{
+    background-color: green;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+
+#news-feed-main-container{
+    grid-area: main;
+    background-color: red;
+}
