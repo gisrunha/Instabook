@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,49 +17,82 @@
         <!-- Header section  -->
         <header id="main-header">
 
-            <!-- Logo Box  -->
-            <div class="logo">
-                <img src="" alt="Logo">
+            <div class="left-side">
+                <!-- Logo Box  -->
+                <div class="logo">
+                    <img src="./assets/instabook-logo.jpg" alt="Logo">
+                </div>
+
+                <!-- Search bar -->
+                <div class="main-search">
+                    <div class="search-bar">
+                        <input type="text" placeholder="Search...">
+                        <i class="ri-search-line"></i>
+                    </div>
+                </div>
+
+                <!-- menu bar  -->
+                <nav class="left-side-nav-bar">
+                    <ul>
+
+                        <li><a href=""><i class="ri-home-7-fill"></i></a></li>
+
+                        <li><a href=""> <i class="ri-user-3-fill"></i></a></li>
+
+                        <li><a href=""><i class="ri-group-2-fill"></i></a></li>
+                    </ul>
+                </nav>
             </div>
 
-            <!-- Search bar -->
-            <div class="search-bar">
-                <input type="text" placeholder="Search...">
-                <button type="submit">Search</button>
+            <div class="after-profile">
+                <!-- Right side menu  -->
+                <nav class="right-side-nav-bar">
+                    <ul>
+                        <li><a href="">About</a></li>
+                        <div class="notify-icon-bg">
+                            <li><a href=""><i class="ri-notification-2-fill"></i></a></li>
+                        </div>
+                    </ul>
+                </nav>
+                <!-- Profile picture box  -->
+                <div class="profile-pic">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s" alt="Profile Picture">
+                </div>
+                <!-- After profile picture menu  -->
+                <nav class="after-profile-nav-bar">
+                    <ul>
+                        <li><a href=""><i class="ri-menu-line"></i></a></li>
+                    </ul>
+                </nav>
+
             </div>
-
-            <!-- menu bar  -->
-            <nav class="left-side-nav-bar">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Pepole</a></li>
-                </ul>
-            </nav>
-
-            <!-- Right side menu  -->
-            <nav class="right-side-nav-bar">
-                <ul>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact us</li>
-                    <li><a href="">Notification</a></li>
-                </ul>
-            </nav>
-            <!-- Profile picture box  -->
-            <div class="profile-pic">
-                <img src="" alt="Profile Picture">
-            </div>
-            <!-- After profile picture menu  -->
-            <nav class="after-profile-nav-bar">
-                <ul>
-                    <li><a href="">menu</a></li>
-                </ul>
-            </nav>
-
         </header>
 
         <!-- main container for news feed -->
         <main id="news-feed-main-container">
 
+            <!-- all the content for writing post -->
+            <div class="post-writing-section">
+                <div class="profile-picture-2nd"></div>
+                <input class="post-box" type="text" name="" id="" placeholder="What's on your mind?">
+                <div class="media-icons">
+                    <i class="ri-image-2-fill"></i>
+                    <i class="ri-film-fill"></i>
+                    <i class="ri-live-fill"></i>
+                </div>
+            </div>
+
+            <div class="post-structure">
+                <div class="caption-area">
+                    caption
+                </div>
+                <div class="picture-area"></div>
+                <div class="action-area">
+                    <i class="ri-heart-3-fill"> <p>&nbsp; Like</p> </i>
+                    <i class="ri-question-answer-fill"> <p>&nbsp; Comment</p> </i>
+                    <i class="ri-share-fill"> <p>&nbsp; Share</p> </i>
+                </div>
+            </div>
         </main>
     </div>
 
