@@ -14,33 +14,39 @@
     <!-- grid-area's main box -->
     <div class="grid-area">
 
-        <!-- Header section  -->
+        <!-- Header section | grid-area nav nav -->
         <header id="main-header">
-
             <div class="left-side">
                 <!-- Logo Box  -->
                 <div class="logo">
-                    <img src="./assets/instabook-logo.jpg" alt="Logo">
+                    <img src="./assets/instabook_logo.jpg" alt="Logo">
                 </div>
 
                 <!-- Search bar -->
                 <div class="main-search">
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search...">
-                        <i class="ri-search-line"></i>
-                    </div>
+                    <input type="text" placeholder="Search...">
+                    <i class="ri-search-line"></i>
                 </div>
 
                 <!-- menu bar  -->
                 <nav class="left-side-nav-bar">
-                    <ul>
+                    <div class="nav-btn-area">
+                        <input type="radio" id="home-icon" name="nav-icon">
+                        <label for="home-icon">
+                            <i class="ri-home-7-line"></i>
+                        </label>
+                        <input type="radio" id="people-icon" name="nav-icon">
+                        <label for="people-icon">
+                            <i class="ri-user-3-line"></i>
+                        </label>
+                        <input type="radio" id="group-icon" name="nav-icon">
+                        <label for="group-icon">
+                            <i class="ri-group-2-line"></i>
+                        </label>
 
-                        <li><a href=""><i class="ri-home-7-fill"></i></a></li>
 
-                        <li><a href=""> <i class="ri-user-3-fill"></i></a></li>
 
-                        <li><a href=""><i class="ri-group-2-fill"></i></a></li>
-                    </ul>
+                    </div>
                 </nav>
             </div>
 
@@ -56,7 +62,8 @@
                 </nav>
                 <!-- Profile picture box  -->
                 <div class="profile-pic">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s" alt="Profile Picture">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s"
+                        alt="Profile Picture">
                 </div>
                 <!-- After profile picture menu  -->
                 <nav class="after-profile-nav-bar">
@@ -68,12 +75,14 @@
             </div>
         </header>
 
-        <!-- main container for news feed -->
+        <!-- main container for news feed | grid-area main -->
         <main id="news-feed-main-container">
-
             <!-- all the content for writing post -->
             <div class="post-writing-section">
-                <div class="profile-picture-2nd"></div>
+                <div class="profile-picture-2nd">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s"
+                        alt="profile">
+                </div>
                 <input class="post-box" type="text" name="" id="" placeholder="What's on your mind?">
                 <div class="media-icons">
                     <i class="ri-image-2-fill"></i>
@@ -82,20 +91,165 @@
                 </div>
             </div>
 
+            <!-- the overall structure of the post -->
             <div class="post-structure">
                 <div class="caption-area">
-                    caption
+                    <div class="post-profile-picture">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s"
+                            alt="">
+                        <div class="name-and-time">
+                            <h4 class="user_name">Lia gotti Lili</h4>
+                            <p>2 hours, <span>ago.<i class="ri-earth-fill"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="caption_text">
+                        <p>Lrem ipsum do.</p>
+                    </div>
                 </div>
-                <div class="picture-area"></div>
+                <div class="picture-area">
+                    <img src="./assets/Hasan.jpg" alt="">
+                </div>
                 <div class="action-area">
-                    <i class="ri-heart-3-fill"> <p>&nbsp; Like</p> </i>
-                    <i class="ri-question-answer-fill"> <p>&nbsp; Comment</p> </i>
-                    <i class="ri-share-fill"> <p>&nbsp; Share</p> </i>
+                    <div class="left-side-btns">
+                        <i class="ri-heart-3-line">
+                            <p>2k</p>
+                        </i>
+                        <i class="ri-chat-3-line">
+                            <p>1k</p>
+                        </i>
+                        <i class="ri-share-line">
+                            <p>500</p>
+                        </i>
+                    </div>
+                    <i class="ri-book-marked-line"></i>
                 </div>
             </div>
-        </main>
-    </div>
 
+
+            <div class="post-structure">
+                <div class="caption-area">
+                    <div class="post-profile-picture">
+                        <img src="https://scontent.fdac138-2.fna.fbcdn.net/v/t39.30808-6/619430772_1233859388843242_4929678500970337583_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=0wwF7AWTJikQ7kNvwH87dxi&_nc_oc=AdlI8YlIGGFAMj16p2_OuVwBq5ieLzO4wJjwV6YnAcSQC218RcLXcRW6l2jpcKW9XT8&_nc_zt=23&_nc_ht=scontent.fdac138-2.fna&_nc_gid=VVAfBM-u1MpsYRjyjaVeJQ&oh=00_Afth6URCePgm3O87xna436l70eCp-ZCkGVmNaj6HJ1MiTQ&oe=6993D1F9"
+                            alt="">
+                        <div class="name-and-time">
+                            <h4 class="user_name">Tahera Akter Tayeba</h4>
+                            <p>10 mins, <span>ago.<i class="ri-earth-fill"></i></span></p>
+                        </div>
+                    </div>
+                    <div class="caption_text">
+                        <p>Lrem ipsum do.</p>
+                    </div>
+                </div>
+                <div class="picture-area">
+                    <img src="./assets/cake.jpg" alt="">
+                </div>
+                <div class="action-area">
+                    <div class="left-side-btns">
+                        <i class="ri-heart-3-line">
+                            <p>2k</p>
+                        </i>
+                        <i class="ri-chat-3-line">
+                            <p>1k</p>
+                        </i>
+                        <i class="ri-share-line">
+                            <p>500</p>
+                        </i>
+                    </div>
+                    <i class="ri-book-marked-line"></i>
+                </div>
+            </div>
+
+        </main>
+
+        <aside class="main_right_aside">
+
+            <div class="massenger">
+                <div class="massenger_icon_area">
+                    <span>Chats</span>
+                    <div class="massenger_icons">
+                        <i class="ri-more-2-line"></i>
+                        <i class="ri-expand-diagonal-fill"></i>
+                        <i class="ri-user-star-fill"></i>
+                    </div>
+                </div>
+                <div class="messenger-search-area">
+                    <i class="ri-search-line"></i>
+                    <input class="messenger-search-box" placeholder="Search Messenger" type="text">
+                </div>
+
+                <div class="sorting-area">
+                    <input type="radio" name="sorting-type" id="all">
+                    <label for="all">
+                        <span>All</span>
+                    </label>
+                    <input type="radio" name="sorting-type" id="unread">
+                    <label for="unread">
+                        <span>Unread</span>
+                    </label>
+                    <input type="radio" name="sorting-type" id="groups">
+                    <label for="groups">
+                        <span>Groups</span>
+                    </label>
+                    <input type="radio" name="sorting-type" id="communities">
+                    <label for="communities">
+                        <span>Communities</span>
+                    </label>
+                </div>
+
+                <div class="contact-area">
+                    <div class="contact-people">
+                        <img src="./assets/tarek.jpg" alt="">
+                        <div class="name-and-text">
+                            <span>Mahmudul Hasan</span>
+                            <div class="message-text">
+                                Hi, how are you?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-people">
+                        <img src="./assets/tarek.jpg" alt="">
+                        <div class="name-and-text">
+                            <span>Mahmudul Hasan</span>
+                            <div class="message-text">
+                                Hi, how are you?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-people">
+                        <img src="./assets/tarek.jpg" alt="">
+                        <div class="name-and-text">
+                            <span>Mahmudul Hasan</span>
+                            <div class="message-text">
+                                Hi, how are you?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-people">
+                        <img src="./assets/tarek.jpg" alt="">
+                        <div class="name-and-text">
+                            <span>Mahmudul Hasan</span>
+                            <div class="message-text">
+                                Hi, how are you?
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-people">
+                        <img src="./assets/tarek.jpg" alt="">
+                        <div class="name-and-text">
+                            <span>Mahmudul Hasan</span>
+                            <div class="message-text">
+                                Hi, how are you?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
 </body>
 
 </html>
