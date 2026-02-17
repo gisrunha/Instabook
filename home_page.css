@@ -90,27 +90,44 @@ body {
     position: relative;
 }
 
-.nav-btn-area input {
+.nav-btn-area input{
     display: none;
 }
 
-.nav-btn-area #home-icon:checked+label i {
+.nav-btn-area label i:last-child{
+    display: none;
+}
+
+.nav-btn-area #home-icon:checked + label i:first-child {
+    display: none;
+}
+.nav-btn-area #home-icon:checked + label i:last-child {
+    display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
     padding-bottom: 3px;
 }
 
-.nav-btn-area #people-icon:checked+label i {
+.nav-btn-area #people-icon:checked + label i:first-child {
+    display: none;
+}
+.nav-btn-area #people-icon:checked + label i:last-child {
+    display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
     padding-bottom: 3px;
 }
 
-.nav-btn-area #group-icon:checked+label i {
+.nav-btn-area #group-icon:checked + label i:first-child {
+    display: none;
+}
+.nav-btn-area #group-icon:checked + label i:last-child {
+    display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
     padding-bottom: 3px;
 }
+
 
 /* right side menu style  */
 .notify-icon-bg {
@@ -352,9 +369,14 @@ body {
     width: 60%;
     background-color: transparent;
 }
-
 .left-side-btns p {
     font-size: 20px;
+}
+
+/* will be applied by js */
+.active-action-btn{
+    color: #4e3894 !important;
+    transition: all 0.2s ease;
 }
 
 /* all buttons icon */
@@ -366,7 +388,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
 }
+
 
 .main_right_aside {
     display: flex;
@@ -475,28 +499,24 @@ body {
 
 .sorting-area #all:checked+label span {
     color: #745BC9;
-    font-weight: bold;
     background-color: #E1D0F1;
     border-radius: 25px;
 }
 
 .sorting-area #unread:checked+label span {
     color: #745BC9;
-    font-weight: bold;
     background-color: #E1D0F1;
     border-radius: 25px;
 }
 
 .sorting-area #groups:checked+label span {
     color: #745BC9;
-    font-weight: bold;
     background-color: #E1D0F1;
     border-radius: 25px;
 }
 
 .sorting-area #communities:checked+label span {
     color: #745BC9;
-    font-weight: bold;
     background-color: #E1D0F1;
     border-radius: 25px;
 }
@@ -573,3 +593,5 @@ body {
     font-weight: bold;
     color: #745BC9;
 }
+
+

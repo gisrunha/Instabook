@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ffd4ac;
+}
+
+.profile-page-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.profile-top-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90%;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+.main-cover-photo-section {
+    height: 60%;
+    width: 70%;
+    background-color: #ffffff;
+    object-fit: cover;
+    position: relative;
+
+}
+
+.cover-photo {
+    height: 100%;
+    width: 100%;
+}
+
+.cover-photo img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.cover-photo-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+}
+
+.cover-photo-btn p, i {
+    font-size: 18px;
+}
+
+.cover-photo-btn {
+    height: 40px;
+    width: 170px;
+    background-color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+}
+
+.profile-mid-section {
+    height: 190px;
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: red;
+}
+
+.profile-mid-section .pic-and-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    /* width: 52%; */
+    gap: 20px;
+    height: 100%;
+}
+
+.pic-and-name img {
+    height: 170px;
+    border-radius: 85px;
+}
+
+.name-and-followers .followers-pic{
+    height: 35px;
+    width: 250px;
+    background-color: green;
+}
+
+
+.main-profile-picture {
+    position: relative;
+}
+
+.main-profile-picture i {
+    position: absolute;
+    bottom: 22%;
+    right: -8px;
+    font-size: 25px;
+    background-color: #dbdbdb;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-mid-section .dashboard-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    row-gap: 10px;
+    padding-bottom: 30px;
+}
+
+.dashboard-section .top-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.dashboard-section .top-btn p:first-child {
+    background-color: #0866ff;
+    height: 40px;
+    width: 220px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    color: white;
+}
+
+.dashboard-section .top-btn p:first-child i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: blue;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+
+.dashboard-section .top-btn p:last-child {
+    background-color: #E2E5E9;
+    height: 40px;
+    width: 70px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 5px;
+    color: black;
+}
+
+
+.bottom-btn {
+    height: 40px;
+    width: 110px;
+    background-color: #E2E5E9;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.bottom-btn p:first-child {
+    font-size: 20px;
+}
+
+.ri-arrow-drop-down-line {
+    background-color: #E2E5E9;
+    height: 40px;
+    width: 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    gap: 10px;
+    color: black;
+}
+
+.bottom-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+}
+
+.ri-more-2-fill {
+    font-size: 20px;
+    display: flex;
+    rotate: 90deg;
+    margin-right: 15px;
+    font-family: sans-serif;
+    font: bold;
+    justify-content: center;
+    padding: 7px 3px;
+    background-color: rgb(206, 206, 206);
+    border-radius: 8px;
+}
+
+.profile-nav {
+    height: 80px;
+    background-color: rgb(28, 207, 12);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 65%;
+    justify-content: space-between;
+}
+.profile-nav-left a{
+    text-decoration: none;
+    color: black;
+ }
+ .profile-nav-left a:hover{
+    background-color: rgb(119, 119, 119);
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+ }
+
+.profile-nav-left {
+    display: flex;
+    margin-left: 5px;
+    flex-direction: row;
+    text-decoration: none;
+    gap: 15px;
+}
+
+.profile-mid-section .line{
+    height: 6px;
+    width: 65%;
+    color: gray;
+    background-color: red;
+}
