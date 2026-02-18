@@ -21,23 +21,26 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    height: 90%;
+    height: 100%;
     width: 100%;
     background-color: #ffffff;
+    /* background-color: green; */
 }
 
 .main-cover-photo-section {
-    height: 60%;
+    height: 50%;
     width: 70%;
     background-color: #ffffff;
     object-fit: cover;
     position: relative;
-
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .cover-photo {
     height: 100%;
     width: 100%;
+
 }
 
 .cover-photo img {
@@ -57,7 +60,8 @@ body {
     border-radius: 10px;
 }
 
-.cover-photo-btn p, i {
+.cover-photo-btn p,
+i {
     font-size: 18px;
 }
 
@@ -77,7 +81,6 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 10px;
-    background-color: red;
 }
 
 .profile-mid-section .pic-and-name {
@@ -95,12 +98,40 @@ body {
     border-radius: 85px;
 }
 
-.name-and-followers .followers-pic{
-    height: 35px;
-    width: 250px;
-    background-color: green;
+.name-and-followers {
+    /* background-color: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-bottom: 30px;
 }
 
+.name-and-followers h1 {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.name-and-followers .followers-pic {
+    height: 35px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* background-color: green; */
+}
+
+.name-and-followers img {
+    height: 32px;
+    border: 2px solid white;
+    margin-right: -7px;
+}
+
+.name-and-followers span {
+    color: gray;
+    font-family: 'Segoe UI';
+}
 
 .main-profile-picture {
     position: relative;
@@ -217,49 +248,132 @@ body {
 
 .ri-more-2-fill {
     font-size: 20px;
+    font-weight: 600;
     display: flex;
     rotate: 90deg;
     margin-right: 15px;
     font-family: sans-serif;
     font: bold;
-    justify-content: center;
-    padding: 7px 3px;
-    background-color: rgb(206, 206, 206);
+    justify-content: flex-end;
+    padding: 15px 10px;
+    background-color: #E2E5E9;
     border-radius: 8px;
 }
 
+.profile-nav-main-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
 .profile-nav {
-    height: 80px;
-    background-color: rgb(28, 207, 12);
+    height: 70px;
+    width: 65%;
+    /* background-color: rgb(255, 45, 45); */
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 65%;
     justify-content: space-between;
 }
-.profile-nav-left a{
-    text-decoration: none;
-    color: black;
- }
- .profile-nav-left a:hover{
-    background-color: rgb(119, 119, 119);
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    display: flex;
- }
 
 .profile-nav-left {
     display: flex;
-    margin-left: 5px;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
-    text-decoration: none;
-    gap: 15px;
+    height: 100%;
 }
 
-.profile-mid-section .line{
-    height: 6px;
-    width: 65%;
+.profile-nav-left p {
     color: gray;
-    background-color: red;
+    padding: 15px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI';
+}
+
+.profile-nav-left p:hover {
+    background-color: #eaedf0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 8px;
+}
+
+.profile-nav-left #post-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #about-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #reels-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #photos-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #groups-btn:checked+label p {
+    color: #0866ff;
+    margin-top: 3px;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #events-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left #more-btn:checked+label p {
+    margin-top: 3px;
+    color: #0866ff;
+    border-bottom: 3px solid blue;
+    border-radius: 0px;
+    background-color: transparent;
+}
+
+.profile-nav-left input {
+    display: none;
+}
+
+.more-and-arrow-marge {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.line {
+    margin-top: 10px;
+    height: 1px;
+    width: 65%;
+    background-color: gray;
 }
