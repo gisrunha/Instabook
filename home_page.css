@@ -90,38 +90,41 @@ body {
     position: relative;
 }
 
-.nav-btn-area input{
+.nav-btn-area input {
     display: none;
 }
 
-.nav-btn-area label i:last-child{
+.nav-btn-area label i:last-child {
     display: none;
 }
 
-.nav-btn-area #home-icon:checked + label i:first-child {
+.nav-btn-area #home-icon:checked+label i:first-child {
     display: none;
 }
-.nav-btn-area #home-icon:checked + label i:last-child {
+
+.nav-btn-area #home-icon:checked+label i:last-child {
     display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
     padding-bottom: 3px;
 }
 
-.nav-btn-area #people-icon:checked + label i:first-child {
+.nav-btn-area #people-icon:checked+label i:first-child {
     display: none;
 }
-.nav-btn-area #people-icon:checked + label i:last-child {
+
+.nav-btn-area #people-icon:checked+label i:last-child {
     display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
     padding-bottom: 3px;
 }
 
-.nav-btn-area #group-icon:checked + label i:first-child {
+.nav-btn-area #group-icon:checked+label i:first-child {
     display: none;
 }
-.nav-btn-area #group-icon:checked + label i:last-child {
+
+.nav-btn-area #group-icon:checked+label i:last-child {
     display: inline;
     color: #745BC9;
     border-bottom: 5px solid #745BC9;
@@ -239,6 +242,66 @@ body {
     border-radius: 50%;
 }
 
+
+
+.post-writing-section .post-box {
+    height: 45px;
+    width: 65%;
+    background-color: #F0F2F5;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+}
+
+.post-writing-section .post-box::placeholder {
+    color: black;
+    font-size: 16px;
+}
+
+.post-writing-section .media-icons {
+    height: 50px;
+    width: 150px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.post-writing-section .media-icons i {
+    font-size: 30px;
+}
+.media-icons i:nth-child(1) {
+    color: #E42645;
+}
+.media-icons i:nth-child(2) {
+    color: #41B35D;
+}
+.media-icons i:nth-child(3) {
+    color: #EF5271;
+}
+
+
+/* all post main container */
+#news-feed-main-container .all-post-container {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+/* structure of the post */
+.post-structure {
+    height: auto;
+    background-color: transparent;
+    width: 100%;
+    max-width: 760px;
+}
+
 .post-profile-picture {
     display: flex;
     flex-direction: row;
@@ -274,44 +337,6 @@ body {
 
 .name-and-time .user_name {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.post-writing-section .post-box {
-    height: 45px;
-    width: 65%;
-    background-color: #F0F2F5;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    padding-left: 15px;
-}
-
-.post-writing-section .post-box::placeholder {
-    color: black;
-    font-size: 16px;
-}
-
-.post-writing-section .media-icons {
-    height: 50px;
-    width: 150px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.post-writing-section .media-icons i {
-    font-size: 30px;
-    color: #745bc9;
-}
-
-/* structure of the post */
-#news-feed-main-container .post-structure {
-    height: auto;
-    background-color: transparent;
-    width: 90%;
-    max-width: 760px;
 }
 
 /* caption area of post structure */
@@ -369,12 +394,14 @@ body {
     width: 60%;
     background-color: transparent;
 }
+
 .left-side-btns p {
     font-size: 20px;
+    width: 50px;
 }
 
 /* will be applied by js */
-.active-action-btn{
+.active-action-btn {
     color: #4e3894 !important;
     transition: all 0.2s ease;
 }
@@ -593,5 +620,3 @@ body {
     font-weight: bold;
     color: #745BC9;
 }
-
-

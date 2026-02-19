@@ -1,6 +1,6 @@
 
 // accessing newsfeed area
-const newsFeedContainer = document.querySelector("#news-feed-main-container");
+const allPostContainer = document.querySelector(".all-post-container");
 
 // accessing btn from navbar
 const homeBtn = document.querySelector(".nav-btn-area .ri-home-7-line");
@@ -19,45 +19,53 @@ let shareCount = 0;
 async function loadNewsFeed() {
     const result = await fetch("news_feed.html");
     const html = await result.text();
-    newsFeedContainer.innerHTML = html;
+    allPostContainer.innerHTML = html;
+
     news_feed_event();
 }
 
 function news_feed_event() {
     // accessing action area's buttons
-    const likeBtn = document.querySelector(".left-side-btns .like-btn");
-    const commentBtn = document.querySelector(".left-side-btns .comment-btn");
-    const shareBtn = document.querySelector(".left-side-btns .share-btn");
-    const saveBtn = document.querySelector(".action-area .save-btn");
-    
+    const likeBtn = document.querySelectorAll(".left-side-btns .like-btn");
+    const commentBtn = document.querySelectorAll(".left-side-btns .comment-btn");
+    const shareBtn = document.querySelectorAll(".left-side-btns .share-btn");
+    const saveBtn = document.querySelectorAll(".action-area .save-btn");
+
     // event listener on action buttons
-    likeBtn.addEventListener("click", () => {
-        action_btn_effect(likeBtn, "ri-heart-3-line", "ri-heart-3-fill");
+    likeBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            action_btn_effect(btn, "ri-heart-3-line", "ri-heart-3-fill");
+        })
     });
-    commentBtn.addEventListener("click", () => {
-        action_btn_effect(commentBtn, "ri-chat-3-line", "ri-chat-3-fill");
+    commentBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            action_btn_effect(btn, "ri-chat-3-line", "ri-chat-3-fill");
+        })
     });
-    shareBtn.addEventListener("click", () => {
-        action_btn_effect(shareBtn, "ri-share-line", "ri-share-fill");
+    shareBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            action_btn_effect(btn, "ri-share-line", "ri-share-fill");
+        })
     });
-    saveBtn.addEventListener("click", () => {
-        action_btn_effect(saveBtn, "ri-bookmark-2-line", "ri-bookmark-2-fill");
+    saveBtn.forEach((btn) => {
+        btn.addEventListener("click", () => {
+            action_btn_effect(btn, "ri-bookmark-2-line", "ri-bookmark-2-fill");
+        })
     });
-    
 }
 
 // function for changing action btn on click
 function action_btn_effect(btn, class_line, class_fill) {
     const randomNumber = Math.floor(Math.random() * 1000) + 1;
     btn.classList.toggle("active-action-btn");
-    
+
     if (btn.classList.contains(class_line)) {
         btn.classList.replace(class_line, class_fill);
     }
     else {
         btn.classList.replace(class_fill, class_line);
     }
-    
+
     let ammount = btn.querySelector("p");
     if (ammount.textContent == "0") {
         ammount.textContent = randomNumber;

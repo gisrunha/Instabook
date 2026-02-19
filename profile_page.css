@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #ffd4ac;
+    background-color: #F2F4F7;
 }
 
 .profile-page-main-container {
@@ -169,7 +169,7 @@ i {
 }
 
 .dashboard-section .top-btn p:first-child {
-    background-color: #0866ff;
+    background-color: #745BC9;
     height: 40px;
     width: 220px;
     font-size: 18px;
@@ -265,7 +265,7 @@ i {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 
 }
 
@@ -378,13 +378,14 @@ i {
     background-color: gray;
 }
 
+
+/* profile page's bottom main container */
 .profile-bottom-main-container {
-    margin-top: 15px;
-    height: 1500px;
+    margin: 15px 0px;
+    /* height: 1500px; */
     width: 65%;
-    background-color: green;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -398,21 +399,17 @@ i {
     gap: 20px;
 }
 
+
+
+
+
+
+/* Intro section of the profile page */
 .bottom-left-container .intro-master-section {
     height: 400px;
     background-color: #ffffff;
     border-radius: 16px;
-}
-
-.profile-bottom-main-container .bottom-right-container {
-    height: 100%;
-    width: 56%;
-    background-color: #93a7ff;
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 20px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .intro-main-section {
@@ -476,14 +473,61 @@ i {
 }
 
 
-.bottom-left-container .profile-frd-container {
+
+.profile-photo-section {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo-section .photo-top-part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-top-part p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.photo-top-part p:last-child {
+    font-size: 20px;
+    color: #745BC9;
+}
+
+.profile-photo-section .photo-gallery {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0px 15px; */
+}
+
+.photo-gallery img {
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
+/* Profile friend Section */
+.bottom-left-container .profile-frd-section {
     /* height: 600px; */
     width: 100%;
     background-color: rgb(255, 255, 255);
     border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-.profile-frd-container .frd-top-part {
+.profile-frd-section .frd-top-part {
     height: 80px;
     width: 100%;
     /* background-color: rgb(255, 104, 242); */
@@ -495,10 +539,11 @@ i {
     border-top-right-radius: inherit;
 }
 
-.frd-top-part .right-side p{
+.frd-top-part .right-side p {
     font-size: 20px;
-    color: #0866ff;
+    color: #745BC9;
 }
+
 .right-side {
     height: 100%;
     /* background-color: green; */
@@ -521,7 +566,7 @@ i {
     font-weight: bold;
 }
 
-.profile-frd-container .frd-bottom-part {
+.profile-frd-section .frd-bottom-part {
     /* height: 85%; */
     width: 100%;
     /* background-color: #ffb9b9; */
@@ -560,7 +605,6 @@ i {
     height: 75%;
     background-color: #fff;
     border-radius: 15px;
-
 }
 
 .grid-item .top img {
@@ -572,11 +616,24 @@ i {
 }
 
 
+.profile-bottom-main-container .bottom-right-container {
+    height: 100%;
+    width: 56%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* Profile post section of bottom right */
 .bottom-right-container .profile-post-section {
     height: auto;
     width: 100%;
     background-color: #FFFFFF;
     border-radius: 16px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .profile-post-section .top-part {
@@ -602,18 +659,12 @@ i {
     background-color: #E4E6E9;
 }
 
-
 .profile-post-section .top-part input::placeholder {
     padding-left: 10px;
     font-size: 15px;
 
 }
 
-/* .middle-line{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 .middle-line {
     width: 93%;
     height: 1px;
@@ -668,7 +719,7 @@ i {
 }
 
 
-/* post grid section */
+/* profile post grid section */
 .post-grid-section {
     display: flex;
     flex-direction: column;
@@ -679,6 +730,7 @@ i {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 100%;
     height: 120px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .post-grid-up-section {
@@ -755,42 +807,21 @@ i {
 
 
 
-/* css for the news feed */
-/* the main container of news feed */
-#news-feed-main-container {
+/* the main container of post */
+.all-post-container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10px;
-    grid-area: main;
-    padding-bottom: 20px;
 }
 
-/* post writing section and img, video etc buttons */
-.post-writing-section {
-
-    margin-top: 10px;
-    height: 65px;
-    width: 90%;
+/* structure of the post */
+.post-structure {
+    height: auto;
+    background-color: transparent;
+    width: 100%;
     max-width: 760px;
-    background-color: #ffffff;
-    display: flex;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 10px;
-    padding: 0px 20px;
-}
-
-/* 2nd porfile picture */
-.post-writing-section .profile-picture-2nd img {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 50px;
-    width: 50px;
-    background-color: #242424;
-    border-radius: 50%;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .post-profile-picture {
@@ -828,44 +859,6 @@ i {
 
 .name-and-time .user_name {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.post-writing-section .post-box {
-    height: 45px;
-    width: 65%;
-    background-color: #F0F2F5;
-    border-radius: 25px;
-    border: none;
-    outline: none;
-    padding-left: 15px;
-}
-
-.post-writing-section .post-box::placeholder {
-    color: black;
-    font-size: 16px;
-}
-
-.post-writing-section .media-icons {
-    height: 50px;
-    width: 150px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.post-writing-section .media-icons i {
-    font-size: 30px;
-    color: #745bc9;
-}
-
-/* structure of the post */
-#news-feed-main-container .post-structure {
-    height: auto;
-    background-color: transparent;
-    width: 90%;
-    max-width: 760px;
 }
 
 /* caption area of post structure */
@@ -923,12 +916,14 @@ i {
     width: 60%;
     background-color: transparent;
 }
+
 .left-side-btns p {
     font-size: 20px;
+    width: 50px;
 }
 
 /* will be applied by js */
-.active-action-btn{
+.active-action-btn {
     color: #4e3894 !important;
     transition: all 0.2s ease;
 }
