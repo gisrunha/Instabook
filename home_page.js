@@ -1,28 +1,31 @@
 
 // accessing newsfeed area
 const allPostContainer = document.querySelector(".all-post-container");
+const postWritingSection = document.querySelector("#news-feed-main-container .post-writing-section");
 
 // accessing btn from navbar
 const homeBtn = document.querySelector(".nav-btn-area .ri-home-7-line");
 const peopleBtn = document.querySelector(".nav-btn-area .ri-user-3-line");
 
 
-
-
-// variable for counting like,comment,share.
-let likeCount = 0;
-let commentCount = 0;
-let shareCount = 0;
-
-
 // function for loading newsfeed-content in the newsfeed area
 async function loadNewsFeed() {
+    postWritingSection.style.display = "flex";
     const result = await fetch("news_feed.html");
     const html = await result.text();
     allPostContainer.innerHTML = html;
 
     news_feed_event();
 }
+
+// function for loading newsfeed-content in the newsfeed area
+async function loadPeople() {
+    const result = await fetch("people.html");
+    const html = await result.text();
+    allPostContainer.innerHTML = `<br>${html}`;
+    postWritingSection.style.display = "none";
+}
+
 
 function news_feed_event() {
     // accessing action area's buttons
@@ -75,17 +78,13 @@ function action_btn_effect(btn, class_line, class_fill) {
     }
 }
 
-
 loadNewsFeed();
 
+homeBtn.addEventListener("click", () => {
+    loadNewsFeed()
+});
+peopleBtn.addEventListener("click", () => {
+    loadPeople()
+});
 
-
-
-
-
-// event listener on navbar buttons
-// homeBtn.addEventListener("click", () => {
-//     homeBtn.classList.toggle("active-nav-btn");
-//     navbar_btn_effect();
-// });
 
