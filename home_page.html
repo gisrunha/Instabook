@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="home_page.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
-    <script src="home_page.js" defer></script>
+    <link rel="stylesheet" href="/css/home_page.css">
+    <link rel="stylesheet" href="/css/global.css">
+    <script src="/js/home_page.js" defer></script>
+    <script type="module" src="/js/global.js" defer ></script>
 </head>
 
 <body>
@@ -15,67 +17,27 @@
     <!-- grid-area's main box -->
     <div class="grid-area">
 
+        <div class="floating-chat-icon"><span>Bot</span></div>
+
+        <!-- Chat Popup -->
+        <div class="floating-chat-box">
+            <div class="chat-header">
+                <span>Chat Bot</span>
+                <i class="ri-close-circle-line"></i>
+            </div>
+
+            <div class="chat-body">
+            </div>
+
+            <div class="chat-input">
+                <input type="text" placeholder="How can I help you?">
+                <button>Send</button>
+            </div>
+        </div>
+
         <!-- Header section | grid-area nav nav -->
         <header id="main-header">
-            <div class="left-side">
-                <!-- Logo Box  -->
-                <div class="logo">
-                    <img src="./assets/instabook_logo.jpg" alt="Logo">
-                </div>
 
-                <!-- Search bar -->
-                <div class="main-search">
-                    <input type="text" placeholder="Search...">
-                    <i class="ri-search-line"></i>
-                </div>
-
-                <!-- menu bar  -->
-                <nav class="left-side-nav-bar">
-                    <div class="nav-btn-area">
-                        <input type="radio" name="nav-btn" id="home-icon" checked>
-                        <label for="home-icon">
-                            <i class="ri-home-7-line"></i>
-                            <i class="ri-home-7-fill"></i>
-                        </label>
-
-                        <input type="radio" name="nav-btn" id="people-icon">
-                        <label for="people-icon">
-                            <i class="ri-user-3-line"></i>
-                            <i class="ri-user-3-fill"></i>
-                        </label>
-
-                        <input type="radio" name="nav-btn" id="group-icon">
-                        <label for="group-icon">
-                            <i class="ri-group-2-line"></i>
-                            <i class="ri-group-2-fill"></i>
-                        </label>
-                    </div>
-                </nav>
-            </div>
-
-            <div class="after-profile">
-                <!-- Right side menu  -->
-                <nav class="right-side-nav-bar">
-                    <ul>
-                        <li><a href="">About</a></li>
-                        <div class="notify-icon-bg">
-                            <li><a href=""><i class="ri-notification-2-fill"></i></a></li>
-                        </div>
-                    </ul>
-                </nav>
-                <!-- Profile picture box  -->
-                <div class="profile-pic">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s"
-                        alt="Profile Picture">
-                </div>
-                <!-- After profile picture menu  -->
-                <nav class="after-profile-nav-bar">
-                    <ul>
-                        <li><a href=""><i class="ri-menu-line"></i></a></li>
-                    </ul>
-                </nav>
-
-            </div>
         </header>
 
         <!-- main container for news feed | grid-area main -->
@@ -101,7 +63,6 @@
             </div>
 
             <div class="all-post-container">
-
 
             </div>
 
@@ -145,79 +106,138 @@
                 </div>
 
                 <div class="contact-area">
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Arif Hossain</span>
-                            <div class="message-text">Assalamu alaikum, ki obostha?</div>
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                            <div class="name-and-text">
+                                <span>Arif Hossain</span>
+                                <div class="message-text">Assalamu alaikum, ki obostha?</div>
+                            </div>
+                        </div>
+                        <div class="right-circle">
+                        </div>
+                    </div>
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="">
+                            <div class="name-and-text">
+                                <span>Nusrat Jahan</span>
+                                <div class="message-text">Kal dekha hobe inshaAllah.</div>
+                            </div>
+                        </div>
+                        <div class="right-circle">
+                        </div>
+                    </div>
+                    <div class="contact-people read-contact-people read-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg"
+                                alt="Random Portrait">
+                            <div class="name-and-text">
+                                <span>Arif Hossain</span>
+                                <div class="message-text">Assalamu alaikum, ki obostha?</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
+                            <div class="name-and-text">
+                                <span>Fahim Rahman</span>
+                                <div class="message-text">Assignment ta pathaiso?</div>
+                            </div>
+                        </div>
+                        <div class="right-circle"></div>
+
+                    </div>
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="">
+                            <div class="name-and-text">
+                                <span>Tanvir Ahmed</span>
+                                <div class="message-text">Aaj match dekhsos?</div>
+                            </div>
+                        </div>
+                        <div class="right-circle"></div>
+                    </div>
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2" alt="">
+                            <div class="name-and-text">
+                                <span>Rafiul Islam</span>
+                                <div class="message-text">Project file ready korecho?</div>
+                            </div>
+                        </div>
+                        <div class="right-circle"></div>
+                    </div>
+                    <div class="contact-people read-contact-people group-message">
+                        <div class="left-part">
+                            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9" alt="">
+                            <div class="name-and-text">
+                                <span>Friends Hangout</span>
+                                <div class="message-text">Kalke coffee shop e jaba sobai?</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/women/22.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Nusrat Jahan</span>
-                            <div class="message-text">Kal dekha hobe inshaAllah.</div>
+                    <div class="contact-people read-contact-people read-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg" alt="">
+                            <div class="name-and-text">
+                                <span>Tanvir Ahmed</span>
+                                <div class="message-text">Assignment submit korso?</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-people unread-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/936119/pexels-photo-936119.jpeg" alt="">
+                            <div class="name-and-text">
+                                <span>Sadia Akter</span>
+                                <div class="message-text">Kalke group meeting hobe?</div>
+                            </div>
+                        </div>
+                        <div class="right-circle"></div>
+                    </div>
+
+                    <div class="contact-people read-contact-people read-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="">
+                            <div class="name-and-text">
+                                <span>Jannatul Ferdouse</span>
+                                <div class="message-text">Kalke class e jaba?</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/35.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Fahim Rahman</span>
-                            <div class="message-text">Assignment ta pathaiso?</div>
+                    <div class="comunity-text">
+                        <h3> No comunities chats</h3>
+                        <p>When you have community chats, you'll see them here.</p>
+                    </div>
+                    <div class="contact-people read-contact-people group-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/3184403/pexels-photo-3184403.jpeg" alt="">
+                            <div class="name-and-text">
+                                <span>Project Team Alpha</span>
+                                <div class="message-text">Guys, deadline ta extend hobe naki?</div>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/48.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Tanvir Ahmed</span>
-                            <div class="message-text">Aaj match dekhsos?</div>
+                    <div class="contact-people read-contact-people group-message">
+                        <div class="left-part">
+                            <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg" alt="">
+                            <div class="name-and-text">
+                                <span>Study Group</span>
+                                <div class="message-text">Math er chapter ta revise korecho?</div>
+                            </div>
                         </div>
                     </div>
-
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/women/55.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Sadia Akter</span>
-                            <div class="message-text">Class er note gula diba?</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/63.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Mehedi Hasan</span>
-                            <div class="message-text">Ektu call de bhai.</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Rafiul Islam</span>
-                            <div class="message-text">Project er kaj shesh?</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/women/81.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Jannatul Ferdous</span>
-                            <div class="message-text">Thanks onek ❤️</div>
-                        </div>
-                    </div>
-
-                    <div class="contact-people">
-                        <img src="https://randomuser.me/api/portraits/men/94.jpg" alt="">
-                        <div class="name-and-text">
-                            <span>Saiful Islam</span>
-                            <div class="message-text">Kal free achis?</div>
-                        </div>
-                    </div>
-
                 </div>
+
+
+
 
                 <div class="message-last-section">
                     <p>See all Messenger</p>

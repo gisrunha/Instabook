@@ -1,0 +1,301 @@
+/*
+ This css is for navbar
+ */
+#main-header {
+    grid-area: navbar;
+    position: sticky;
+    z-index: 10;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* left side nav-bar's position  */
+.left-side {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 1.5vw;
+}
+
+/* left side logo  */
+.logo img {
+    display: flex;
+    align-items: center;
+    padding: 1vw;
+    width: 4vw;
+    min-width: 50px;
+    height: auto;
+    border-radius: 50px;
+}
+
+/* search-icon style  */
+.main-search {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 40px;
+    width: 45%;
+    border-radius: 16px;
+    background-color: #F0F2F5;
+    padding: 0 10px;
+}
+
+/* search-bar style  */
+.main-search input {
+    width: 50%;
+    height: auto;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.main-search i {
+    font-size: 1.2rem;
+}
+
+.main-search input::placeholder {
+    color: black;
+}
+
+/* laft side navbar style  */
+.nav-btn-area {
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 5vw;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.nav-btn-area i {
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.nav-btn-area input {
+    display: none;
+}
+
+.nav-btn-area label i:last-child {
+    display: none;
+}
+
+.nav-btn-area #home-icon:checked+label i:first-child {
+    display: none;
+}
+
+.nav-btn-area #home-icon:checked+label i:last-child {
+    display: inline;
+    color: #745BC9;
+    border-bottom: 5px solid #745BC9;
+    padding-bottom: 3px;
+}
+
+.nav-btn-area #people-icon:checked+label i:first-child {
+    display: none;
+}
+
+.nav-btn-area #people-icon:checked+label i:last-child {
+    display: inline;
+    color: #745BC9;
+    border-bottom: 5px solid #745BC9;
+    padding-bottom: 3px;
+}
+
+.nav-btn-area #group-icon:checked+label i:first-child {
+    display: none;
+}
+
+.nav-btn-area #group-icon:checked+label i:last-child {
+    display: inline;
+    color: #745BC9;
+    border-bottom: 5px solid #745BC9;
+    padding-bottom: 3px;
+}
+
+/* right side menu style  */
+.notify-icon-bg {
+    background-color: #745BC9;
+    border-radius: 50px;
+}
+
+.ri-notification-2-fill {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: black;
+}
+
+.right-side-nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.right-side-nav-bar ul li {
+    list-style: none;
+    padding: 7px;
+}
+
+.right-side-nav-bar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 40;
+}
+
+/* profile picture style  */
+.profile-pic img {
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+    border-radius: 50px;
+}
+
+/* after-profile-nav-bar style  */
+.after-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 3vw;
+}
+
+.ri-menu-line {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    color: #000000;
+}
+
+.after-profile-nav-bar ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.after-profile-nav-bar ul li {
+    list-style: none;
+}
+
+.after-profile-nav-bar ul li a {
+    text-decoration: none;
+}
+
+/* media quries for navbar  */
+@media(max-width:600px){
+    #main-header{
+        width: 100vw;
+        background-color: red;
+    }
+
+    .left-side-nav-bar{
+        display: none;
+    }
+}
+
+
+
+/*
+This css is for  people section in navbar
+*/
+.people-top-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+
+.people-top-part p:first-child {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.people-top-part p:last-child {
+    font-size: 18px;
+    color: #745BC9;
+}
+
+.people-container {
+    width: 100%;
+    /* height: 300px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 1fr); */
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.people-container .person-div {
+    background-color: #ffffff;
+    height: auto;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-bottom: 13px;
+}
+
+.person-div .pic-area {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background-color: #242424;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+.person-div .pic-area img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+.person-div .name-area {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-left: 5%;
+    margin-bottom: 30px;
+}
+
+.person-div .name-area p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.person-div button {
+    border: none;
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.person-div button:hover {
+    filter: brightness(80%);
+}
+
+.person-div button:nth-of-type(1) {
+    background-color: #E1D0F1;
+    color: #745BC9;
+}
+
+.person-div button:last-child {
+    margin-top: 10px;
+}

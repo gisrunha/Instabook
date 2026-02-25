@@ -37,7 +37,7 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: url("./assets/login_issultration-Photoroom.png");
+    background-image: url("/assets/login_issultration-Photoroom.png");
     background-size: cover;
 }
 
