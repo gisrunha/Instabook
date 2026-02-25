@@ -1,6 +1,6 @@
 <!-- Header section | grid-area nav nav -->
 
-<div class="left-side">
+<div class="nav-bar-left-part">
     <!-- Logo Box  -->
     <div class="logo">
         <img src="/assets/instabook_logo.jpg" alt="Logo">
@@ -11,50 +11,40 @@
         <input type="text" placeholder="Search...">
         <i class="ri-search-line"></i>
     </div>
-
-    <!-- menu bar  -->
-    <nav class="left-side-nav-bar">
-        <div class="nav-btn-area">
-            <input type="radio" name="nav-btn" id="home-icon" checked>
-            <label for="home-icon">
-                <i class="ri-home-7-line"></i>
-                <i class="ri-home-7-fill"></i>
-            </label>
-
-            <input type="radio" name="nav-btn" id="people-icon">
-            <label for="people-icon">
-                <i class="ri-user-3-line"></i>
-                <i class="ri-user-3-fill"></i>
-            </label>
-
-            <input type="radio" name="nav-btn" id="group-icon">
-            <label for="group-icon">
-                <i class="ri-group-2-line"></i>
-                <i class="ri-group-2-fill"></i>
-            </label>
-        </div>
-    </nav>
 </div>
 
-<div class="after-profile">
+<!-- menu bar  -->
+<nav class="nav-btn-area">
+    <input type="radio" name="nav-btn" id="home-icon" checked>
+    <label for="home-icon">
+        <i class="ri-home-7-line"></i>
+        <i class="ri-home-7-fill"></i>
+    </label>
+
+    <input type="radio" name="nav-btn" id="people-icon">
+    <label for="people-icon">
+        <i class="ri-user-3-line"></i>
+        <i class="ri-user-3-fill"></i>
+    </label>
+
+    <input type="radio" name="nav-btn" id="group-icon">
+    <label for="group-icon">
+        <i class="ri-group-2-line"></i>
+        <i class="ri-group-2-fill"></i>
+    </label>
+</nav>
+
+<div class="nav-bar-right-part">
     <!-- Right side menu  -->
-    <nav class="right-side-nav-bar">
-        <ul>
-            <li><a href="">About</a></li>
-            <div class="notify-icon-bg">
-                <li><a href=""><i class="ri-notification-2-fill"></i></a></li>
-            </div>
-        </ul>
-    </nav>
+    <a href="">About</a>
+    <div class="notify-icon-bg">
+        <i class="ri-notification-2-fill"></i>
+    </div>
     <!-- Profile picture box  -->
     <div class="profile-pic">
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmLlz4kiZ23iny0wdtSPKQSpK-tpZfuM2QAQ&s"
             alt="Profile Picture">
     </div>
     <!-- After profile picture menu  -->
-    <nav class="after-profile-nav-bar">
-        <ul>
-            <li><a href=""><i class="ri-menu-line"></i></a></li>
-        </ul>
-    </nav>
+    <i class="ri-menu-line"></i>
 </div>
